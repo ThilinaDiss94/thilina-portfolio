@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thilina Dissanayake | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-orb orb-1"></div>
+  <div class="background-orb orb-2"></div>
+  <div class="grid-overlay"></div>
+
+  <header>
+    <nav>
+      <a href="#home" class="logo">Thilina Dissanayake<span>.</span></a>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon">☀️</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <ul id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero reveal">
+      <div class="hero-text">
+        <p class="eyebrow">Software Engineering Undergraduate</p>
+        <h1>Hi, I’m <span>Thilina Dissanayake</span></h1>
+        <div class="typed-text">
+          <span id="typed"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-description">
+          I build scalable digital experiences with Flutter, web technologies, and data-driven ideas.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Explore Projects</a>
+          <a href="assets/Thilina_Dissanayake_CV.pdf" class="btn btn-secondary" download>Download CV</a>
+        </div>
+        <div class="social-actions">
+          <a href="https://github.com/" target="_blank" class="social-btn">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" class="social-btn">LinkedIn</a>
+        </div>
+        <div class="stats">
+          <div>
+            <strong>4+</strong>
+            <span>Projects</span>
+          </div>
+          <div>
+            <strong>6+</strong>
+            <span>Technologies</span>
+          </div>
+          <div>
+            <strong>100%</strong>
+            <span>Dedication</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="profile-ring">
+          <div class="profile-inner">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80" alt="Thilina Dissanayake" />
+          </div>
+        </div>
+        <div class="floating-badge badge-1">Flutter</div>
+        <div class="floating-badge badge-2">AI</div>
+        <div class="floating-badge badge-3">Web</div>
+      </div>
+    </section>
+
+    <section id="about" class="about reveal">
+      <div class="section-heading">
+        <p class="eyebrow">About Me</p>
+        <h2>Turning ideas into useful products</h2>
+      </div>
+      <div class="about-content">
+        <p>
+          I’m a Software Engineering undergraduate at IIT with strong hands-on experience in mobile and web development.
+          My work focuses on creating practical solutions using Flutter, Firebase, Java, Python, and modern web tools.
+        </p>
+        <p>
+          I enjoy solving real-world problems, learning new technologies, and building experiences that are both functional and beautiful.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="skills reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>What I work with</h2>
+      </div>
+      <div class="skills-box">
+        <span>Flutter</span>
+        <span>Firebase</span>
+        <span>React Native</span>
+        <span>Java</span>
+        <span>Python</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Git & GitHub</span>
+        <span>SQL</span>
+        <span>Machine Learning</span>
+        <span>UI/UX</span>
+      </div>
+    </section>
+
+    <section id="projects" class="projects reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Featured work</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-top">
+            <span>Mobile App</span>
+            <span>2026</span>
+          </div>
+          <h3>FixMate</h3>
+          <p>
+            A Flutter and Firebase-based booking platform that connects users with service providers for home maintenance needs.
+          </p>
+          <div class="project-tags">
+            <span>Flutter</span>
+            <span>Firebase</span>
+            <span>Firestore</span>
+          </div>
+          <a class="project-link" href="https://github.com/" target="_blank">View on GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span>ML Project</span>
+            <span>2025</span>
+          </div>
+          <h3>Loan Approval Predictor</h3>
+          <p>
+            A smart classification and estimation system for predicting loan approvals and expected loan amounts.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Scikit-learn</span>
+            <span>Pandas</span>
+          </div>
+          <a class="project-link" href="https://github.com/" target="_blank">View on GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span>Mobile App</span>
+            <span>2025</span>
+          </div>
+          <h3>Samithi Bill Print App</h3>
+          <p>
+            A clean React Native Expo app for member management, billing, and printing records efficiently.
+          </p>
+          <div class="project-tags">
+            <span>React Native</span>
+            <span>Expo</span>
+            <span>SQLite</span>
+          </div>
+          <a class="project-link" href="https://github.com/" target="_blank">View on GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span>Software</span>
+            <span>2024</span>
+          </div>
+          <h3>Employee Performance System</h3>
+          <p>
+            A Java-based console application for tracking employee records, performance, and vacancy management.
+          </p>
+          <div class="project-tags">
+            <span>Java</span>
+            <span>OOP</span>
+            <span>Console App</span>
+          </div>
+          <a class="project-link" href="https://github.com/" target="_blank">View on GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something great</h2>
+      </div>
+      <div class="contact-card">
+        <div class="contact-info">
+          <p>Email: <a href="mailto:dissanayakedrt94@gmail.com">dissanayakedrt94@gmail.com</a></p>
+          <p>Location: Kegalle, Sri Lanka</p>
+          <div class="contact-links">
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea name="message" rows="5" placeholder="Message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-message" id="formMessage"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Thilina Dissanayake. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
