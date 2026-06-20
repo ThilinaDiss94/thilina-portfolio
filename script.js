@@ -89,18 +89,27 @@ if (menuToggle && navMenu) {
   });
 }
 
+emailjs.init("jCFAFX_28-RJ3GOvN");
+
 if (contactForm && formMessage) {
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const formData = new FormData(contactForm);
-    const name = formData.get('name')?.toString().trim();
 
-    if (name) {
-      formMessage.textContent = `Thanks ${name}! Your message has been sent.`;
-    } else {
-      formMessage.textContent = 'Thanks! Your message has been sent.';
-    }
+    formMessage.textContent = 'Sending...';
 
-    contactForm.reset();
+    emailjs.sendForm(
+      "service_wu0vwnx",
+      "template_wblb4se",
+      contactForm
+    )
+    .then(() => {
+      formMessage.textContent = 'Message sent successfully!';
+      contactForm.reset();
+    })
+    .catch((error) => {
+      formMessage.textContent = 'Failed to send message. Please try again.';
+      console.log(error);
+    });
   });
 }
+
